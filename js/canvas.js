@@ -20,3 +20,12 @@ function startClick(){
 function closeClick(){
     painting = false;
 }
+
+function draw(e){
+    if(!painting) return;
+        
+}
+
+canvas.addEventListener('mousedown', startClick);
+canvas.addEventListener('mousemove', draw);
+canvas.addEventListener('mouseup', closeClick);
